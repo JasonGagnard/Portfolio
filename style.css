@@ -57,10 +57,12 @@ section {
     cursor: default;
 }
 .navbar a {
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: var(--text-color);
-    margin-left: 4rem;
+    margin-left: 3rem;
     transition: .3s;
+    
+    
 
 }
 .navbar a:hover,
@@ -104,6 +106,9 @@ section {
 }
 .home-content h3:nth-of-type(2){
     margin-bottom: 2rem;
+}
+.home-content a{
+    margin-top: 2rem;
 }
 
 span{
@@ -186,10 +191,100 @@ span{
    margin: 2rem 0 3rem; 
 }
 
-.services h2{
-    margin-bottom: 5rem;
+.about .edu-exp .row {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1.5rem;
 }
 
+.about .edu-exp .row .box-container {
+   flex: 1 1 40rem;
+}
+
+.about .edu-exp .row .box-container .title {
+   padding: 1.5rem;
+   font-size: 3rem;
+   background-color: var(--bg-color);
+}
+
+.about .edu-exp .row .box-container .box {
+   text-align: left;
+   margin: 1.5rem 0;
+   background-color: var(--bg-color);
+   padding: 2rem;
+   border-radius: 0;
+}
+
+.about .edu-exp .row .box-container .box span {
+   font-size: 1.5rem;
+}
+
+.about .edu-exp .row .box-container .box h3 {
+   font-size: 2.5rem;
+   font-weight: normal;
+   margin-top: 1.5rem;
+   margin-bottom: 1rem;
+   color: var(--main-color);
+}
+
+.about .edu-exp .row .box-container .box p {
+   line-height: 1.5;
+   font-size: 1.7rem;
+   line-height: 2;
+}
+
+ .box-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+   gap: 1.5rem;
+   align-items: flex-start;
+}
+
+.box-container .box {
+   padding: 3rem 2rem;
+   border: var(--main-color);
+
+}
+
+.box-container .box i {
+   font-size: 4rem;
+   margin-bottom: 2rem;
+}
+
+.box-container .box h3 {
+   margin: 1rem 0;
+   font-size: 5rem;
+   padding: 1.5rem;
+   background-color: var(--bg-color);
+   font-weight: normal;
+}
+
+.box-container .box p {
+   line-height: 2;
+   font-size: 1.7rem;
+}
+
+.box-container .box:hover {
+   background-color: var(--main-color);
+}
+
+ .box-container .box:hover i {
+   color: var(--white);
+}
+
+ .box-container .box:hover p {
+   color: var(--white);
+}
+
+
+.services h2{
+    margin-bottom: 5rem;
+    font-size: 5rem;
+}
+.services h3{
+    margin-top: 2rem;
+    font-size: 3.5rem;
+}
 .services-container {
     display: flex;
     justify-content: center;
@@ -205,6 +300,7 @@ span{
     text-align: center;
     border: .2rem solid var(--bg-color);
     transition: .5s ease;
+    margin-bottom: 3rem;
 }
 
 .services-container .services-box:hover{
@@ -302,6 +398,22 @@ span{
     font-size: 2rem;
     color: var(--second-bg-color);
 }
+.portfolioplus a{
+    text-align: center; 
+    display:inline-block;
+    border: .5rem solid;
+    margin: 1rem;
+    font-size: 2.8rem;
+    cursor: pointer;
+    width: 25rem;
+    height: 25rem;
+    border-radius:20%;
+    margin-left: 15rem;
+    padding: 6rem;
+
+
+}
+
 
 .contact h2 {
     margin-bottom: 3rem;
@@ -471,6 +583,38 @@ span{
         grid-template-columns: repeat(2,1fr);
     }
 }
+.title2 {
+   padding: 1.5rem;
+   font-size: 5rem;
+   background-color: var(--yellow);
+   border-radius: 45px;
+   justify-content: center;
+   margin-bottom: 5rem;
+   margin-left: 18rem;
+   margin-right: 18rem;
+   text-align: center;
+}
+
+.title3 {
+   font-size: 4rem;
+   margin-top: 5rem;
+}
+
+.title4 {
+   font-size: 3rem;
+   margin-top: 3rem;
+   text-align: center;
+}
+
+.veille {
+   font-size: 2.5rem;
+}
+.veillenum {
+    display: flex;
+    margin: auto;
+    margin-top: 4rem;
+}
+
 
 @media (max-width: 617px) {
     .portfolio-container {
